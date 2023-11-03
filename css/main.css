@@ -1,0 +1,145 @@
+*margin{
+    margin:0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap');
+  
+  
+body{
+    background-color:#FDF3F5;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo-nav{
+    color:#E70D0D;
+    font-style: initial;
+    font-family:oswald;
+    font-size:2em;
+    margin-top:0;
+    margin-left:3%;
+}
+
+
+
+.menu-nav{
+    display:flex;
+    flex-direction: row;
+    
+
+}
+
+.menu-li{
+    margin-right: 25px;
+    list-style: none;
+    
+    
+}
+
+.menu-li a{
+    text-decoration: none;
+    color:#FF66A6;
+    font-family: sans-serif;
+    font-size:20px;
+    
+}
+
+.slide{
+    background-color: #FFC1CC;
+    display:flex;
+    justify-content: space-between;
+    height: 370px;
+    align-items: center;
+}
+
+.logo-slide{
+    max-width: 200px;
+    max-height: 200px;
+    padding-left:60px;
+    
+}
+
+.img-donas-slide{
+    max-height: 300px;
+}
+
+.texto-slide{
+    max-width:350px;
+    color:white;
+    font-family: oswald;
+    font-weight: lighter;
+    letter-spacing: 0.25px;
+    font-size:18px;
+}
+
+
+h1{
+    color:#E70D0D;
+    font-family: oswald;
+    font-size:25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.parrafo-index{
+    color:#797979;
+    font-family:oswald;
+}
+/**M OBILE **/
+
+@media only screen and (max-width: 450px) {
+
+    .nav{
+        display:none;
+    }
+
+    .slide{
+        background-color: #FFC1CC;
+        display:flex;
+        justify-content: center;
+        height: 370px;
+        min-width: 390px;
+        align-items: center;
+        flex-direction: column;
+    
+  }
+
+  .logo-slide{
+    max-width: 200px;
+    max-height: 200px;
+    padding-left:0px;
+    padding-top:5%;
+    
+}
+
+.img-donas-slide{
+    max-height: 280px;
+    display:flex;
+    justify-content: center;
+    max-width: 350px;
+}
+
+.texto-slide{
+   display:none;
+}
+
+}
+
+
+
+/**
+@media only screen and (max-width: 450px) {
+    .logo-nav{
+        font-size:1em;
+        margin:0;
+    }
+    .menu-li a{
+       font-size:1em;
+    }
+  }
+
+  **/
