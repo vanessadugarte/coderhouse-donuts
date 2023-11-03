@@ -1,0 +1,49 @@
+*margin{
+    margin:0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body{
+    background-color:#FDF3F5;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo-nav{
+    color:#E70D0D;
+    font-style: initial;
+    font-family:oswald;
+    font-size:2em;
+    margin-top:0;
+    margin-left:3%;
+}
+
+
+
+.menu-nav{
+    display:flex;
+    flex-direction: row;
+    
+
+}
+
+.menu-li{
+    margin-right: 25px;
+    list-style: none;
+    
+    
+}
+
+.menu-li a{
+    text-decoration: none;
+    color:#FF66A6;
+    font-family: sans-serif;
+    font-size:20px;
+    
+}
