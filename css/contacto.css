@@ -67,6 +67,31 @@ h2{
     max-width: 40%;
 }
 
+.mapa-contenedor{
+display:flex;
+justify-content: center;
+}
+
+
+.mapa{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mapa p{
+    text-align: center;
+    font-family: alata;
+    color:#797979;
+    font-size:15px;
+}
+
+
+.form-inputs{
+    display:flex;
+    flex-direction: column;
+    
+}
 #footer{
     background-color:#FFA1C9;
     height:9%;
