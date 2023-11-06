@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Narrow:wght@400;500;600&display=swap');
+
+
 body{
     background-color:#FDF3F5;
 }
@@ -68,10 +71,58 @@ h2{
 }
 
 
+
+.lugares{
+display: flex;
+justify-content: center;
+
+}
+
+.tienda {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    max-width: 550px;
+    min-width: 350px;
+}
+
+.tienda-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 65%;
+    font-family: alata;
+    color:#797979;
+}
+
+.tienda-info p{
+    max-width: 550px;
+}
+
+.titulo-tienda{
+    color:#E70D0D;
+    font-family:archivo narrow;
+    margin:3px;
+    font-size: 20px;
+}
+
+.foto-tienda{
+    max-width: 100%;
+    height: auto;
+}
+
+.estrellas{
+    max-width: 15%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
 #footer{
     background-color:#FFA1C9;
     height:9%;
     bottom: 0;
+    margin-top:2%
     
 }
 

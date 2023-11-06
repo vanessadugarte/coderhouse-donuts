@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Narrow:wght@400;500;600&display=swap');
+
 body{
     background-color:#FDF3F5;
     margin:0px;
@@ -121,6 +123,7 @@ h1{
     background-color:#FFA1C9;
     height:9%;
     bottom: 0;
+    margin-top:2%
     
 }
 

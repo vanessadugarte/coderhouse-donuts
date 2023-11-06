@@ -60,7 +60,7 @@ h2{
 }
 
 .introducciones{
-    
+    margin:auto;
     text-align: center;
     font-family: alata;
     color:#797979;
@@ -68,12 +68,44 @@ h2{
     max-width: 40%;
 }
 
+.ingredientes-contenedor{
+    display:flex;
+    justify-content: space-evenly;
+   align-items: flex-start;
+   margin-top:2%;
+}
+
+.ingredientes{
+    display:flex;
+    flex-direction: column;
+}
+
+.h3-ingredientes{
+    color:#E70D0D;
+    font-family: oswald;
+    font-size:25px;
+}
+
+.lista-ingredientes{
+    
+    padding-inline-start: 0px;
+    font-family:alata;
+    color:#797979;
+    font-size:15px;
+    max-width: 400px;
+}
+
+.img-ingredientes{
+     max-width: 100%;
+     height: auto;
+    
+}
 
 #footer{
     background-color:#FFA1C9;
     height:9%;
     bottom: 0;
-    
+    margin-top:2%;
 }
 
 .icons{
