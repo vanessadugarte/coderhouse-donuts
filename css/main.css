@@ -118,6 +118,15 @@ h1{
 
 }
 
+.favoritas{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.img-favorita{
+    margin-right:10px;
+}
 
 #footer{
     background-color:#FFA1C9;
