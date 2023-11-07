@@ -67,11 +67,41 @@ h2{
     max-width: 40%;
 }
 
+.form{
+    display:flex;
+    justify-content: center;
+    gap:60px;
+}
+
+.input{
+    border:none;
+    background-color:#FFE0E6;
+    color:#FF68A7;
+    font-family: alata;
+    margin-top:5px;
+    border-radius: 5px;
+    min-width: 400px;
+}
+
+
+.enviar{
+background-color:#FF68A7;
+color:#FFF;
+border:none;
+font-family: alata;
+margin-top:5px;
+border-radius: 5px;
+}
+
+
 .mapa-contenedor{
 display:flex;
 justify-content: center;
 }
 
+.donas-form{
+    max-width:480px;
+}
 
 .mapa{
     display:flex;
@@ -82,7 +112,7 @@ justify-content: center;
 .mapa p{
     text-align: center;
     font-family: alata;
-    color:#797979;
+    color:#FF68A7;
     font-size:15px;
 }
 
