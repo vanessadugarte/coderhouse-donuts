@@ -12,7 +12,9 @@ body{
     background-color:#FDF3F5;
     margin:0px;
     height: 100%;
+    
 }
+
 
 .header{
     display:flex;
@@ -129,14 +131,14 @@ h1{
 }
 
 .organic-shape{
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 300px;
     background: radial-gradient(circle at 50% 100%, #F7BFC9, #ED6D8C);
     border-radius: 60% 40% 40% 70% / 60% 40% 70% 40%;
     position: absolute;
     top: 60%;
-    left: -6%;
-    opacity: 15%;
+    left:4%;
+    opacity: 13%;
     z-index: -1;
 }
 
@@ -146,10 +148,11 @@ h1{
     background: radial-gradient(circle at 50% 100%, #F7BFC9, #ED6D8C);
     border-radius: 60% 40% 40% 70% / 60% 40% 70% 40%;
     position: absolute;
-    top: 16%;
-    left: 87%;
-    opacity: 20%;
+    top: 30%;
+    left: 82%;
+    opacity: 14%;
     z-index:-1;
+    
 }
 
 #footer{
@@ -168,6 +171,8 @@ h1{
     padding-top: 5px;
     
 }
+
+
 
 .icons-rrss{
     max-width: 4%;
