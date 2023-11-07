@@ -11,8 +11,7 @@
 body{
     background-color:#FDF3F5;
     margin:0px;
-    height: 100%;
-    
+    height: 100%;    
 }
 
 
@@ -35,23 +34,18 @@ body{
 .menu-nav{
     display:flex;
     flex-direction: row;
-    
-
 }
 
 .menu-li{
     margin-right: 25px;
-    list-style: none;
-    
-    
+    list-style: none;    
 }
 
 .menu-li a{
     text-decoration: none;
     color:#FF66A6;
     font-family: sans-serif;
-    font-size:20px;
-    
+    font-size:20px;    
 }
 
 .slide{
@@ -65,8 +59,7 @@ body{
 .logo-slide{
     max-width: 200px;
     max-height: 200px;
-    padding-left:60px;
-    
+    padding-left:60px;    
 }
 
 .img-donas-slide{
@@ -101,9 +94,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     max-width: 50vw;
-    transform: translate(50%);
-    
-    
+    transform: translate(50%);    
 }
 
 .parrafo-index{
@@ -111,19 +102,16 @@ h1{
     font-family:alata;
     font-size:15px;
     text-align: justify;
-    max-width: 60%;
-    
+    max-width: 60%;    
 }
 
 .donas-descripcion-index{
     max-width: 30%;
-
 }
 
 .favoritas{
     display:flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .img-favorita{
@@ -151,16 +139,14 @@ h1{
     top: 30%;
     left: 82%;
     opacity: 14%;
-    z-index:-1;
-    
+    z-index:-1;    
 }
 
 #footer{
     background-color:#FFA1C9;
     height:9%;
     bottom: 0;
-    margin-top:2%
-    
+    margin-top:2%   
 }
 
 .icons{
@@ -168,8 +154,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap:1%;
-    padding-top: 5px;
-    
+    padding-top: 5px;   
 }
 
 
@@ -183,7 +168,6 @@ h1{
 color:white;
 border:solid 1px;
 width:70vw;
-
 }
 
 
@@ -195,65 +179,10 @@ width:70vw;
     color:white;
     font-size:15px;
     font-family: alata;
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;   
 }
 
 
 .info-footer p{
     margin:2px;
 }
-/**MOBILE **/
-
-@media only screen and (max-width: 450px) {
-
-    .nav{
-        display:none;
-    }
-
-    .slide{
-        background-color: #FFC1CC;
-        display:flex;
-        justify-content: center;
-        height: 370px;
-        min-width: 390px;
-        align-items: center;
-        flex-direction: column;
-    
-  }
-
-  .logo-slide{
-    max-width: 200px;
-    max-height: 200px;
-    padding-left:0px;
-    padding-top:5%;
-    
-}
-
-.img-donas-slide{
-    max-height: 280px;
-    display:flex;
-    justify-content: center;
-    max-width: 350px;
-}
-
-.texto-slide{
-   display:none;
-}
-
-}
-
-
-
-/**
-@media only screen and (max-width: 450px) {
-    .logo-nav{
-        font-size:1em;
-        margin:0;
-    }
-    .menu-li a{
-       font-size:1em;
-    }
-  }
-
-  **/
