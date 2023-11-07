@@ -101,6 +101,30 @@ h2{
     
 }
 
+.organic-shape{
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle at 50% 100%, #F7BFC9, #ED6D8C);
+    border-radius: 60% 40% 40% 70% / 60% 40% 70% 40%;
+    position: absolute;
+    top: 60%;
+    left: -6%;
+    opacity: 15%;
+    z-index: -1;
+}
+
+.organic-shape2 {
+    width: 320px;
+    height: 530px;
+    background: radial-gradient(circle at 50% 100%, #F7BFC9, #ED6D8C);
+    border-radius: 60% 40% 40% 70% / 60% 40% 70% 40%;
+    position: absolute;
+    top: 16%;
+    left: 87%;
+    opacity: 20%;
+    z-index:-1;
+}
+
 #footer{
     background-color:#FFA1C9;
     height:9%;
