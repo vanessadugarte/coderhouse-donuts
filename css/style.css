@@ -128,30 +128,30 @@ h2{
 }
 
 .organic-shape{
-    width: 280px;
+    width: 260px;
     height: 300px;
     background: radial-gradient(circle at 50% 100%, #F7BFC9, #ED6D8C);
     border-radius: 60% 40% 40% 70% / 60% 40% 70% 40%;
     position: absolute;
     top: 60%;
     left:4%;
-    opacity: 13%;
+    opacity: 11%;
     z-index: -1;
 }
 
 .organic-shape2 {
-    width: 320px;
-    height: 530px;
+    width: 200px;
+    height: 430px;
     background: radial-gradient(circle at 50% 100%, #F7BFC9, #ED6D8C);
     border-radius: 60% 40% 40% 70% / 60% 40% 70% 40%;
     position: absolute;
-    top: 30%;
-    left: 82%;
-    opacity: 14%;
+    top: 27%;
+    left: 69%;
+    opacity: 12%;
     z-index:-1;    
 }
 
-/**galeria**/
+/**galeria normal**/
 
 .galeria{
     display:flex;
@@ -170,12 +170,12 @@ h2{
 }
 
 
-/**--------------------GALERIA GRID --------------**/
+/**--------------------GALERIA GRID DESKTOP --------------**/
 
 #container-grid{
     display:grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: repeat(5,200px);
+    grid-template-columns: repeat(5, 16%);
+    grid-template-rows: repeat(5,16%);
     grid-template-areas: 
     "img-grid-1 img-grid-1 img-grid-1 img-grid-2 img-grid-3" /**fila1**/
     "img-grid-1 img-grid-1 img-grid-1 img-grid-4 img-grid-3" /**fila2**/
@@ -184,12 +184,20 @@ h2{
     "img-grid-7 img-grid-7 img-grid-7 img-grid-7 img-grid-8"; /**fila5**/
     justify-content: center;
     gap:15px;
+    margin-top:15px;
 }
 
 .tamano-box{
+    position:relative;
+    overflow:clip;
+    
+}
+
+.tamano-box img{
     width:100%;
-    height: 100%;
-    overflow: hidden;
+    height: auto;
+    object-fit: cover;
+    
 }
 
 .img-grid-1{
@@ -223,6 +231,10 @@ h2{
 .img-grid-8{
     grid-area: img-grid-8;
 }
+
+
+
+
 
 
 /**lugares**/
@@ -278,7 +290,7 @@ h2{
         font-family: alata;
         color:#797979;
         font-size:15px;
-        max-width: 40%;
+        max-width: 55%;
     }
     
     .ingredientes-contenedor{
@@ -375,10 +387,11 @@ justify-content: center;
 
 
 #footer{
-    background-color:#FFA1C9;
-    height:9%;
+    background-color: #FFA1C9;
+    height: 9%;
     bottom: 0;
-    margin-top:2%   
+    margin-top: 2%;
+    width: 100%; 
 }
 
 .icons{
@@ -418,3 +431,98 @@ width:70vw;
 .info-footer p{
     margin:2px;
 }
+
+/**MEDIA QUERIES GENERALES TABLET 768px**/
+@media only screen and (max-width: 768px) {
+
+    .introducciones{
+        
+        font-size:12px;
+        max-width: 70%;
+    }
+
+    .menu-nav{
+        display:none;
+    }
+
+    .organic-shape, .organic-shape2{
+        display:none;
+    }
+
+    .info-footer p {
+        font-size: 12px;
+    }
+
+/**-------galeria media query 768 tablet -------**/
+
+    #container-grid{
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(4, 275px);
+        grid-template-areas:
+        /**COL1     COL2**/ 
+        "img-grid-1 img-grid-2" /**fila1**/
+        "img-grid-3 img-grid-4" /**fila2**/
+        "img-grid-5 img-grid-6" /**fila3**/
+        "img-grid-7 img-grid-8"; /**fila4**/
+        justify-content: center;
+        gap:15px;
+        margin-top:15px;
+        max-width: 100%;
+    }
+
+    .tamano-box img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+  }
+
+}
+
+
+/**MEDIA QUERIES GENERALES MOBILE 480px**/
+@media only screen and (max-width: 480px) {
+
+    h2{ 
+        font-size:19px;      
+    }
+   
+    .info-footer p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+/**-------galeria media query mobile -------**/
+
+
+    #container-grid {
+        grid-template-columns: 70%;
+        grid-template-rows: repeat(8, 200px);
+        grid-template-areas:
+            "img-grid-1"
+            "img-grid-2"
+            "img-grid-3"
+            "img-grid-4"
+            "img-grid-5"
+            "img-grid-6"
+            "img-grid-7"
+            "img-grid-8";
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .tamano-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .organic-shape,
+    .organic-shape2 {
+        display: none;
+    }
+
+}
+    /**fin galeria**/
+
