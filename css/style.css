@@ -121,10 +121,13 @@ h2{
 .favoritas{
     display:flex;
     justify-content: center;   
+    text-align: center;
 }
 
 .img-favorita{
     margin-right:10px;
+    margin-top:0px;
+    min-width: 25%;
 }
 
 .organic-shape{
@@ -174,8 +177,8 @@ h2{
 
 #container-grid{
     display:grid;
-    grid-template-columns: repeat(5, 16%);
-    grid-template-rows: repeat(5,16%);
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: repeat(5,15%);
     grid-template-areas: 
     "img-grid-1 img-grid-1 img-grid-1 img-grid-2 img-grid-3" /**fila1**/
     "img-grid-1 img-grid-1 img-grid-1 img-grid-4 img-grid-3" /**fila2**/
@@ -290,7 +293,7 @@ h2{
         font-family: alata;
         color:#797979;
         font-size:15px;
-        max-width: 55%;
+        max-width: 50%;
     }
     
     .ingredientes-contenedor{
@@ -394,19 +397,33 @@ justify-content: center;
     width: 100%; 
 }
 
+.icons-container{
+    display:flex;
+    justify-content: center;
+
+}
+
 .icons{
     display:flex;
     justify-content: center;
     align-items: center;
     gap:1%;
-    padding-top: 5px;   
+    padding-top: 6px;
+    max-width:10%;
+      
 }
 
+.icons a{
+   text-align: center;
+   
+}
 
 
 .icons-rrss{
-    max-width: 4%;
+    width:85%;
+    
 }
+
 
 
 .linea-footer{
@@ -453,6 +470,10 @@ width:70vw;
         font-size: 12px;
     }
 
+    .icons{
+        max-width:22%;
+       }
+
 /**-------galeria media query 768 tablet -------**/
 
     #container-grid{
@@ -476,6 +497,27 @@ width:70vw;
         object-fit: cover;
   }
 
+
+
+/**HOME 768PX**/
+
+
+    .favoritas{
+       display:flex;
+       justify-content: center; 
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       
+}
+
+
+.img-favorita{
+    margin-right:0px;
+    margin-top:12px;
+    object-fit: cover;
+}
+
 }
 
 
@@ -491,6 +533,9 @@ width:70vw;
         text-align: center;
     }
 
+   .icons{
+    max-width:35%;
+   }
 
 /**-------galeria media query mobile -------**/
 
