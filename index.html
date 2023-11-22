@@ -3,23 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png" />
 
     <title>donuts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo-nav">DONUTS</a>
-      <nav class="nav">
-        <ul class="menu-nav">
-          <li class="menu-li">
-            <a href="pages/galeria.html">Galer&iacute;a</a>
-          </li>
-          <li class="menu-li"><a href="pages/lugares.html">Lugares</a></li>
-          <li class="menu-li"><a href="pages/recetas.html">Recetas</a></li>
-          <li class="menu-li"><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="pages/galeria.html"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/lugares.html">Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -44,7 +76,7 @@
       </section>
 
       <section id="contenedor-historia">
-        <h1>DONAS, DULCES MOMENTOS</h1>
+        <h1 class="h1">DONAS, DULCES MOMENTOS</h1>
         <article class="historia">
           <p class="parrafo-index">
             La historia comienza en Holanda, donde se preparaban unos panecitos
@@ -65,49 +97,86 @@
         </article>
       </section>
 
-      
+      <h2>NUESTRAS FAVORITAS</h2>
       <section class="favoritas">
-        <article class="favoritas-par">
-        <img
-          class="img-favorita"
-          src="images/foto donas verdes home desk (1).jpg"
-          alt="donas verdes"
-        />
-        <img
-          class="img-favorita"
-          src="images/foto donas choco home desk.jpg"
-          alt="donas chocolate"
-        />
+        <article class="img-home">
+          <img
+            class="img-favorita"
+            src="images/foto donas verdes home desk (1).jpg"
+            alt="donas verdes"
+          />
+          <p>
+            Estos donuts son pura fantasía: deliciosos por dentro y
+            supervistosos por fuera gracias a los glaseados y 'toppings' de
+            colores con los que los son cubiertos.
+          </p>
         </article>
-        <article class="favoritas-par">
-        <img
-          class="img-favorita"
-          src="images/foto donas rosado home desk.jpg"
-          alt="donas rosadas de fresas"
-        />
-        <img
-          class="img-favorita"
-          src="images/foto donas multi home desk.jpg"
-          alt="donas multicolores"
-        />
+
+        <article class="img-home">
+          <img
+            class="img-favorita"
+            src="images/foto donas choco home desk.jpg"
+            alt="donas chocolate"
+          />
+          <p>
+            Las donas de chocolates son una de las mejores elecciones. Celebra
+            el fin de semana en familia con estas ricas donas hechas al horno
+          </p>
+        </article>
+
+        <article class="img-home">
+          <img
+            class="img-favorita"
+            src="images/foto donas rosado home desk.jpg"
+            alt="donas rosadas de fresas"
+          />
+          <p>
+            Estas donas las puedes combinar en cualquier evento. Inspiradas en
+            el amor universal por las donas.
+          </p>
+        </article>
+
+        <article class="img-home">
+          <img
+            class="img-favorita"
+            src="images/foto donas multi home desk.jpg"
+            alt="donas multicolores"
+          />
+          <p>
+            Hay infinidad de recetas para todos los gustos. Las donas pueden
+            venir en muchos colores y sabores ¡No hay límites!
+          </p>
         </article>
       </section>
-    
+
       <div class="organic-shape"></div>
       <div class="organic-shape2"></div>
     </main>
     <footer id="footer">
       <section class="icons-container">
-      <article class="icons">
+        <article class="icons">
+          <a href="https://www.youtube.com/"
+            ><img
+              class="icons-rrss"
+              src="images/facebook.svg"
+              alt="icono facebook"
+          /></a>
 
-        <a href="https://www.youtube.com/"><img class="icons-rrss" src="images/facebook.svg" alt="icono facebook" /></a>
+          <a href="https://www.youtube.com/"
+            ><img
+              src="images/youtube.svg"
+              class="icons-rrss"
+              alt="icono youtube"
+          /></a>
 
-        <a href="https://www.youtube.com/"><img src="images/youtube.svg" class="icons-rrss" alt="icono youtube"/></a>
-               
-        <a href="https://www.youtube.com/"><img class="icons-rrss" src="images/instagram.svg" alt="icono instagram"/></a>
-        
-      </article>
-    </section>
+          <a href="https://www.youtube.com/"
+            ><img
+              class="icons-rrss"
+              src="images/instagram.svg"
+              alt="icono instagram"
+          /></a>
+        </article>
+      </section>
       <hr class="linea-footer" />
       <section class="info-footer">
         <p>©TODOS LOS DERECHOS RESERVADOS 1999-2023 Donuts Chile ltda.</p>
@@ -116,5 +185,10 @@
         </p>
       </section>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -18,6 +18,7 @@ body{
 .header{
     display:flex;
     justify-content: space-between;
+    color:#F7BFC9
 }
 
 .logo-nav{
@@ -63,7 +64,7 @@ body{
 }
 
 .img-donas-slide{
-    max-height: 300px;
+    max-height: 260px;
 }
 
 .texto-slide{
@@ -76,7 +77,7 @@ body{
 }
 
 
-h1{
+.h1{
     color:#E70D0D;
     font-family: oswald;
     font-size:25px;
@@ -85,7 +86,7 @@ h1{
 }
 
 h2{
- 
+    margin-top:1%;
     color:#E70D0D;
     font-family: oswald;
     font-size:25px;
@@ -101,6 +102,7 @@ h2{
 .historia{
     display:flex;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     max-width: 50vw;
     transform: translate(50%);    
@@ -119,16 +121,35 @@ h2{
 }
 
 .favoritas{
-    display:flex;
-    justify-content: center;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     text-align: center;
+}
+
+.favoritas article{
+    flex: 1 0 20%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favoritas p{
+    max-width:60%
 }
 
 .img-favorita{
     margin-right:10px;
-    margin-top:0px;
     min-width: 25%;
+    margin-top:10px;
 }
+
+
+
 
 .organic-shape{
     width: 260px;
@@ -240,7 +261,7 @@ h2{
 
 
 
-/**lugares**/
+/**-------------------lugares----------------**/
 
 .lugares{
     display: flex;
@@ -286,7 +307,7 @@ h2{
         justify-content: space-between;  
     }
 
-    /**recetas**/
+    /**--------------recetas-------------------**/
     .introducciones{
         margin:auto;
         text-align: center;
@@ -328,7 +349,7 @@ h2{
          height: auto;    
     }
 
-    /**contactos**/
+    /**---------------contactos----------------**/
     
 .form{
     display:flex;
@@ -448,6 +469,38 @@ width:70vw;
 .info-footer p{
     margin:2px;
 }
+/**-------------------------MEDIA QUERIES 1024PX------------**/
+
+@media only screen and (max-width: 1024px) {
+
+    .img-donas-slide {
+        max-height: 200px
+    }
+
+        .texto-slide {
+            font-size: 14px;
+
+}
+
+.logo-slide {
+    max-width: 170px; 
+
+   }
+
+   .donas-descripcion-index {
+    max-width: 40%;
+}
+
+.historia {
+    max-width: 75vw;
+    transform: translate(25%);
+  }
+
+  .img-favorita {
+    margin-right: 0px;   
+    
+  }
+}
 
 /**MEDIA QUERIES GENERALES TABLET 768px**/
 @media only screen and (max-width: 768px) {
@@ -458,9 +511,7 @@ width:70vw;
         max-width: 70%;
     }
 
-    .menu-nav{
-        display:none;
-    }
+    
 
     .organic-shape, .organic-shape2{
         display:none;
@@ -514,8 +565,27 @@ width:70vw;
 
 .img-favorita{
     margin-right:0px;
-    margin-top:12px;
     object-fit: cover;
+    max-width: 80%;
+}
+
+.img-donas-slide{
+    max-height: 170px;
+}
+
+.slide{
+    flex-direction:column;
+    height:auto;
+}
+
+.logo-slide {
+    max-width: 170px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.texto-slide{
+    text-align:center;
 }
 
 }
@@ -537,7 +607,7 @@ width:70vw;
     max-width:35%;
    }
 
-/**-------galeria media query mobile -------**/
+/**-------galeria media query mobile 480px -------**/
 
 
     #container-grid {
@@ -568,6 +638,28 @@ width:70vw;
         display: none;
     }
 
-}
-    /**fin galeria**/
+     /**fin galeria media 480px**/
 
+
+
+     /**-----media query 480px home**/
+     .historia{
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    transform: translate(20%);
+    }
+
+    .parrafo-index {
+        max-width: 100%;
+
+    }
+
+    h1{
+    margin-top: 10px;
+    }
+
+    .img-donas-slide {
+        max-height: 150px;
+    }
+}
