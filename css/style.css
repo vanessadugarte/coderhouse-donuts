@@ -310,30 +310,30 @@ h4{
 
 /**-------------------lugares----------------**/
 
-.lugares{
+.tiendas-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+    
+    
     }
     
-    .tienda {
-        display: flex;
-        justify-content: center;
-        margin-top: 2%;
-        max-width: 550px;
-        min-width: 350px;
-    }
+   
     
     .tienda-info{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 65%;
+        flex: 1 0 30%;
+        box-sizing: border-box;
         font-family: alata;
         color:#797979;
+        margin:15px;
     }
     
     .tienda-info p{
-        max-width: 550px;
+        padding-left: 13%;
+        padding-right: 13%;
+        height:100%;
     }
     
     .titulo-tienda{
@@ -349,9 +349,9 @@ h4{
     }
     
     .estrellas{
-        max-width: 15%;
-        display:flex;
-        justify-content: space-between;  
+        max-width: 100%;
+        display:inline-block;
+         
     }
 
     /**--------------recetas-------------------**/
