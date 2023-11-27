@@ -8,6 +8,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Narrow:wght@400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Almarai:wght@300;400;700&family=Archivo+Narrow:wght@400;500;600&display=swap');
+
 body{
     background-color:#FDF3F5;
     margin:0px;
@@ -49,9 +51,7 @@ body{
     font-size:20px;    
 }
 
-.navbar-custom{
-    background-color: rgba(255, 102, 166, 0.04) !important;
-}
+
 
 .nav-item a{
     color: #FF66A6;
@@ -92,6 +92,7 @@ body{
     font-size:25px;
     display: flex;
     justify-content: center;
+    margin-top:10px;
 }
 
 h2{
@@ -127,6 +128,46 @@ h2{
 
 .donas-descripcion-index{
     max-width: 30%;
+}
+
+.carrusel-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.carrusel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:white;
+    max-width:75%;
+    gap:10px;
+    padding:1%;
+}
+
+.carrusel article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.ver-mas{
+    background-color:#FF66A6;
+    border-radius: 22px;
+    border: none !important;
+    color:#FFF;
+}
+
+
+h4{
+    font-size:15px
 }
 
 .favoritas{
@@ -475,7 +516,22 @@ width:70vw;
 .info-footer p{
     margin:2px;
 }
-/**-------------------------MEDIA QUERIES 1024PX------------**/
+
+
+.navbar-custom{
+    background-color:#FDF3F5 !important;
+    font-family: Alata; 
+   
+}
+
+
+
+
+
+
+
+
+/**-------------------------INICIO MEDIA QUERIES---- 1024PX------------**/
 
 @media only screen and (max-width: 1024px) {
 
@@ -611,6 +667,10 @@ width:70vw;
 
    .icons{
     max-width:35%;
+   }
+
+   .vr{
+    display: none;
    }
 
 /**-------galeria media query mobile 480px -------**/
