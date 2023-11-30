@@ -417,7 +417,7 @@ h4{
     font-family: alata;
     margin-top:5px;
     border-radius: 5px;
-    min-width: 400px;
+    min-width: 100%;
 }
 
 .input::placeholder{
@@ -438,6 +438,7 @@ border-radius: 5px;
 display:flex;
 justify-content: center;
 }
+
 
 .donas-form{
     max-width:480px;
@@ -460,13 +461,15 @@ justify-content: center;
 .form-inputs{
     display:flex;
     flex-direction: column;
+    max-width: 100%;
+    flex-grow: 0.15;
 }
 
 
 #footer{
     background-color: #FFA1C9;
     height: 9%;
-    bottom: 0;
+    bottom: 0 !important;
     margin-top: 2%;
     width: 100%; 
 }
@@ -622,7 +625,26 @@ width:70vw;
         object-fit: cover;
   }
 
+/**contacto 768**/
 
+.form{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+main{
+    max-width: 100%;
+}
+
+.mapa iframe{
+    max-width: 80%;
+}
+
+.mapa{
+    align-items: center;
+}
 
 /**HOME 768PX**/
 
@@ -690,6 +712,7 @@ width:70vw;
 
 }
 
+}
 
 /**MEDIA QUERIES GENERALES MOBILE 480px**/
 @media only screen and (max-width: 480px) {
@@ -766,4 +789,19 @@ width:70vw;
     .img-donas-slide {
         max-height: 150px;
     }
+
+
+    /**media query 480px contacto**/
+
+    .donas-form {
+        max-width: 90%;
+    }
+
+    .form{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+   
 }
