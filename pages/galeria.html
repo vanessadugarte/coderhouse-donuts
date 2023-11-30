@@ -3,20 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/galeria.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Galer&iacute;a</title>
+    <link rel="icon" href="../images/favicon.png" type="image/png"/>
   </head>
   <body>
     <header class="header">
       <a href="../index.html" class="logo-nav">DONUTS</a>
-      <nav class="nav">
-        <ul class="menu-nav">
-          <li class="menu-li"><a href="#">Galer&iacute;a</a></li>
-          <li class="menu-li"><a href="lugares.html">Lugares</a></li>
-          <li class="menu-li"><a href="recetas.html">Recetas</a></li>
-          <li class="menu-li"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="galeria.html"
+                  >Galer&iacute;a</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lugares.html">Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
     </header>
     <main>
       <section>
@@ -30,85 +64,58 @@
         </p>
       </section>
 
-      <section class="galeria">
-        <article class="trio-img">
-          <img
-            class="img1-galeria"
-            src="../images/galeria-cuadrada-1.jpg"
-            alt="donas servidas"
-          />
-          <img
-            class="img2-galeria"
-            src="../images/galeria-cuadrada-2.jpg"
-            alt="donas con leche"
-          />
-          <img
-            class="img3-galeria"
-            src="../images/galeria-cuadrada-3.jpg"
-            alt="donas sin glaseado"
-          />
+
+      <section id="container-grid">
+        <article class="img-grid-1 tamano-box">
+          <img src="../images/foto-1-galeria-grid-desk.jpg" alt="">
         </article>
 
-        <article class="trio-img">
-          <img
-            class="img4-galeria"
-            src="../images/galeria-cuadrada-4.jpg"
-            alt="donas en pendulo"
-          />
-          <img
-            class="img5-galeria"
-            src="../images/galeria-cuadrada-5.jpg"
-            alt="donas en rejilla"
-          />
-          <img
-            class="img6-galeria"
-            src="../images/galeria-cuadrada-6.jpg"
-            alt="donas de chocolate"
-          />
+        <article class="img-grid-2 tamano-box">
+          <img src="../images/foto-2-galeria-grid-desk.jpg" alt="">
         </article>
 
-        <article class="trio-img">
-          <img
-            class="img7-galeria"
-            src="../images/galeria-cuadrada-7.jpg"
-            alt="donas en fondo rosado"
-          />
-          <img
-            class="img8-galeria"
-            src="../images/galeria-cuadrada-8.jpg"
-            alt="donas verdes"
-          />
-          <img
-            class="img9-galeria"
-            src="../images/galeria-cuadrada-1.jpg"
-            alt="donas verdes"
-          />
+        
+        <article class="img-grid-3 tamano-box">
+          <img src="../images/foto-3-galeria-grid-desk.jpg" alt="">
+        </article>
+
+        <article class="img-grid-4 tamano-box">
+          <img src="../images/foto-4-galeria-grid-desk.jpg" alt="">
+        </article>
+
+        <article class="img-grid-5 tamano-box">
+          <img src="../images/foto-5-galeria-grid-desk.jpg" alt="">
+        </article>
+
+        <article class="img-grid-6 tamano-box">
+          <img src="../images/foto-6-galeria-grid-desk.jpg" alt="">
+        </article>
+
+        <article class="img-grid-7 tamano-box">
+          <img src="../images/foto-7-galeria-grid-desk.jpg" alt="">
+        </article>
+
+        <article class="img-grid-8 tamano-box">
+          <img src="../images/foto-8-galeria-grid-desk.jpg" alt="">
         </article>
       </section>
+
       <div class="organic-shape"></div>
       <div class="organic-shape2"></div>
     </main>
     <footer id="footer">
-      <section class="icons">
-        <img
-          class="icons-rrss"
-          src="../icons/facebook.svg"
-          alt="icono facebook"
-        />
-        <img
-          class="icons-rrss"
-          src="../icons/youtube.svg"
-          alt="icono youtube"
-        />
-        <img
-          class="icons-rrss"
-          src="../icons/instagram.svg"
-          alt="icono instagram"
-        />
-      </section>
+      <section class="icons-container">
+      <article class="icons">
 
+        <a href="https://www.youtube.com/"><img class="icons-rrss" src="../images/facebook.svg" alt="icono facebook" /></a>
+
+        <a href="https://www.youtube.com/"><img src="../images/youtube.svg" class="icons-rrss" alt="icono youtube"/></a>
+               
+        <a href="https://www.youtube.com/"><img class="icons-rrss" src="../images/instagram.svg" alt="icono instagram"/></a>
+        
+      </article>
+    </section>
       <hr class="linea-footer" />
-
       <section class="info-footer">
         <p>©TODOS LOS DERECHOS RESERVADOS 1999-2023 Donuts Chile ltda.</p>
         <p>
@@ -116,5 +123,6 @@
         </p>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
