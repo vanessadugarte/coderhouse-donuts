@@ -9,7 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
     <link rel="icon" href="../images/favicon.png" type="image/png"/>
     <title>Contacto</title>
   </head>
@@ -55,10 +55,10 @@
     <main>
       <h2>CONTACTO</h2>
       <section class="form">
-        <form class="form-inputs">
+        <form class="form__inputs">
           <label for="nombre"></label>
           <input
-            class="input"
+            class="form__inputs--input"
             type="text"
             id="nombre"
             name="nombre"
@@ -68,7 +68,7 @@
 
           <label for="correo"></label>
           <input
-            class="input"
+            class="form__inputs--input"
             type="email"
             id="correo"
             name="correo"
@@ -78,7 +78,7 @@
 
           <label for="mensaje"></label>
           <textarea
-            class="input"
+            class="form__inputs--input"
             id="mensaje"
             name="mensaje"
             rows="5"
@@ -86,17 +86,17 @@
             required
           ></textarea>
 
-          <button class="enviar" type="submit" value="Enviar">Enviar</button>
+          <button class="form__button" type="submit" value="Enviar">Enviar</button>
         </form>
         <img
-          class="donas-form"
+          class="form__img"
           src="../images/donas-formulario.png"
           alt="donas formulario"
         />
       </section>
 
-      <section class="mapa-contenedor">
-        <article class="mapa">
+      <section class="mapaContenedor">
+        <article class="mapaContenedor__mapa">
           <p>
             Estamos ubicados en Av. Apoquindo 1805, Torre I, piso 8, Las Condes,
             Santiago - Chile.
@@ -116,12 +116,12 @@
       <div class="organic-shape"></div>
       <div class="organic-shape2"></div>
     </main>
-    <footer id="footer">
-      <section class="icons-container">
-        <article class="icons">
+    <footer id="footer" class="footer">
+      <section class="footer__rrss">
+        <article>
           <a href="https://www.facebook.com/" target="_blank"
             ><img
-              class="icons-rrss"
+              class="footer__rrss--icon"
               src="../images/facebook.svg"
               alt="icono facebook"
           /></a>
@@ -129,20 +129,20 @@
           <a href="https://www.youtube.com/" target="_blank"
             ><img
               src="../images/youtube.svg"
-              class="icons-rrss"
+              class="footer__rrss--icon"
               alt="icono youtube"
           /></a>
 
           <a href="https://www.instagram.com/" target="_blank"
             ><img
-              class="icons-rrss"
+              class="footer__rrss--icon"
               src="../images/instagram.svg"
               alt="icono instagram"
           /></a>
         </article>
       </section>
-      <hr class="linea-footer" />
-      <section class="info-footer">
+      <hr/>
+      <section class="footer__info">
         <p>©TODOS LOS DERECHOS RESERVADOS 1999-2023 Donuts Chile ltda.</p>
         <p>
           Av. Apoquindo 1805, Torre 1, piso 8, Las Condes, Santiago - Chile.

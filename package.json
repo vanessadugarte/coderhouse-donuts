@@ -1,0 +1,28 @@
+{
+  "name": "coderhouse-donuts",
+  "version": "1.0.0",
+  "description": "proyecto web coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessadugarte/coderhouse-donuts.git"
+  },
+  "keywords": [
+    "coderhouse",
+    "donuts",
+    "donas"
+  ],
+  "author": "Vanessa V Dugarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanessadugarte/coderhouse-donuts/issues"
+  },
+  "homepage": "https://github.com/vanessadugarte/coderhouse-donuts#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,98 @@
+@import 'comun';
+
+.form{
+    display:flex;
+    justify-content: center;
+    gap:60px;
+
+    
+
+    &__img{
+      max-width:480px;
+    }
+
+    &__button{
+      background-color:#FF68A7;
+      color:#FFF;
+      border:none;
+      font-family: alata;
+      margin-top:5px;
+      border-radius: 5px;
+      }
+
+      &__inputs{
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+        flex-grow: 0.15;
+      
+
+    &--input{
+      border:none;
+      background-color:#FFE0E6;
+      color:#FF68A7;
+      font-family: alata;
+      margin-top:5px;
+      border-radius: 5px;
+      min-width: 100%;
+
+      &::placeholder{
+        color:#FF66A6;
+    }
+
+  }
+    
+  }
+  
+}
+
+
+
+
+.mapaContenedor{
+display:flex;
+justify-content: center;
+
+&__mapa{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    p{
+      text-align: center;
+      font-family: alata;
+      color:#FF68A7;
+      font-size:15px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .form{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .form__img {
+        max-width: 90%;
+    }
+    
+
+      .form__inputs{
+        min-width: 85%;
+    }
+  }
+
+  main{
+      max-width: 100%;
+  }
+
+  .mapaContenedor__mapa{
+      align-items: center;
+
+      iframe{
+        max-width: 80%;
+      }
+  }
+}

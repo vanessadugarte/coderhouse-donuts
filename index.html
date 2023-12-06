@@ -11,7 +11,7 @@
     />
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <title>donuts</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css"/>
   </head>
   <body>
     <header class="header">
@@ -56,10 +56,10 @@
       <section class="slide">
         <img
           src="images/logo-donuts.png"
-          class="logo-slide"
+          class="slide__logo"
           alt="logo donuts slide"
         />
-        <p class="texto-slide">
+        <p class="slide__texto">
           ¡Bienvenidos a Donuts, el destino definitivo para los amantes de las
           donas! Nuestro rincón de dulzura ofrece una ecléctica selección de
           donas frescas y deliciosas que te harán la boca agua. Únete a nosotros
@@ -68,15 +68,15 @@
         </p>
         <img
           src="images/donas-png.png"
-          class="img-donas-slide"
+          class="slide__img"
           alt="imagen donas slide"
         />
       </section>
 
-      <section id="contenedor-historia">
+      <section class="historiaContenedor">
         <h1 class="h1">DONAS, DULCES MOMENTOS</h1>
-        <article class="historia">
-          <p class="parrafo-index">
+        <article>
+          <p>
             La historia comienza en Holanda, donde se preparaban unos panecitos
             o bollos nombrados "Olykoek" que significa "pan aceitoso" y es que
             para cocinarlo se freían en manteca de cerdo, pero era más bien
@@ -88,7 +88,7 @@
           </p>
 
           <img
-            class="donas-descripcion-index"
+            class="historiaContenedor__img"
             src="images/dona-rosada-descripcion.png"
             alt="dona rosada"
           />
@@ -98,50 +98,47 @@
 <!--carrusel-->
 
 <h2>RECETAS</h2>
-<section class="carrusel-container">
-<section class="carrusel">
+<section class="carruselContainer">
+<section class="carruselContainer__carrusel">
   <article>
-    <img src="images/dona-5-frutilla.png" class="img-carrusel" alt="dona 1 fresas"/>
+    <img src="images/dona-5-frutilla.png" class="carruselContainer__carrusel--img" alt="dona 1 fresas"/>
     <h4>Fresas</h4>
-    <button class="ver-mas px-3">Ver m&aacute;s</button>
+    <button class="carruselContainer__carrusel--vermas px-3">Ver m&aacute;s</button>
   </article>
   
   <article>
-    <img src="images/dona-6-cookies-and-cream.png" class="img-carrusel" alt="dona 2 cookies and cream"/>
+    <img src="images/dona-6-cookies-and-cream.png" class="carruselContainer__carrusel--img" alt="dona 2 cookies and cream"/>
     <h4>Cookies & Cream</h4>
-    <button class="ver-mas px-3">Ver m&aacute;s</button>
+    <button class="carruselContainer__carrusel--vermas px-3">Ver m&aacute;s</button>
   </article>
   
   <article>
-    <img src="images/dona-1-manjar.png" class="img-carrusel" alt="dona 3 manjar"/>
+    <img src="images/dona-1-manjar.png" class="carruselContainer__carrusel--img" alt="dona 3 manjar"/>
     <h4>Manjar</h4>
-    <button class="ver-mas px-3">Ver m&aacute;s</button>
+    <button class="carruselContainer__carrusel--vermas px-3">Ver m&aacute;s</button>
   </article>
   
   <article>
-    <img src="images/dona-4-chispas-chocolate.png" class="img-carrusel" alt="dona 4 chocolate"/>
+    <img src="images/dona-4-chispas-chocolate.png" class="carruselContainer__carrusel--img" alt="dona 4 chocolate"/>
     <h4>Chocolate</h4>
-    <button class="ver-mas px-3">Ver m&aacute;s</button>
+    <button class="carruselContainer__carrusel--vermas px-3">Ver m&aacute;s</button>
   </article>
   
   <article>
-    <img src="images/dona-5-frutilla.png" class="img-carrusel" alt="dona 5 maracuya"/>
+    <img src="images/dona-5-frutilla.png" class="carruselContainer__carrusel--img" alt="dona 5 maracuya"/>
     <h4>Maracuy&aacute;</h4>
-    <button class="ver-mas px-3">Ver m&aacute;s</button>
+    <button class="carruselContainer__carrusel--vermas px-3">Ver m&aacute;s</button>
   </article>
   
   <article>
-    <img src="images/dona-2-gomitas.png" class="img-carrusel" alt="dona 6 marshmallow"/>
+    <img src="images/dona-2-gomitas.png" class="carruselContainer__carrusel--img" alt="dona 6 marshmallow"/>
     <h4>Marshmallow</h4>
-    <button class="ver-mas px-3">Ver m&aacute;s</button>
+    <button class="carruselContainer__carrusel--vermas px-3">Ver m&aacute;s</button>
   </article>
   
 
 </section>
 </section>
-
-
-
 
 
 
@@ -149,9 +146,9 @@
 
       <h2>NUESTRAS FAVORITAS</h2>
       <section class="favoritas">
-        <article class="img-home">
+        <article class="favoritas__group">
           <img
-            class="img-favorita"
+            class="favoritas__group--img"
             src="images/foto donas verdes home desk (1).jpg"
             alt="donas verdes"
           />
@@ -162,9 +159,9 @@
           </p>
         </article>
 
-        <article class="img-home">
+        <article class="favoritas__group">
           <img
-            class="img-favorita"
+            class="favoritas__group--img"
             src="images/foto donas choco home desk.jpg"
             alt="donas chocolate"
           />
@@ -174,9 +171,9 @@
           </p>
         </article>
 
-        <article class="img-home">
+        <article class="favoritas__group">
           <img
-            class="img-favorita"
+            class="favoritas__group--img"
             src="images/foto donas rosado home desk.jpg"
             alt="donas rosadas de fresas"
           />
@@ -186,9 +183,9 @@
           </p>
         </article>
 
-        <article class="img-home">
+        <article class="favoritas__group">
           <img
-            class="img-favorita"
+            class="favoritas__group--img"
             src="images/foto donas multi home desk.jpg"
             alt="donas multicolores"
           />
@@ -202,12 +199,12 @@
       <div class="organic-shape"></div>
       <div class="organic-shape2"></div>
     </main>
-    <footer id="footer">
-      <section class="icons-container">
-        <article class="icons">
+    <footer id="footer" class="footer">
+      <section class="footer__rrss">
+        <article>
           <a href="https://www.facebook.com/" target="_blank"
             ><img
-              class="icons-rrss"
+              class="footer__rrss--icon"
               src="images/facebook.svg"
               alt="icono facebook"
           /></a>
@@ -215,20 +212,20 @@
           <a href="https://www.youtube.com/" target="_blank"
             ><img
               src="images/youtube.svg"
-              class="icons-rrss"
+              class="footer__rrss--icon"
               alt="icono youtube"
           /></a>
 
           <a href="https://www.instagram.com/" target="_blank"
             ><img
-              class="icons-rrss"
+              class="footer__rrss--icon"
               src="images/instagram.svg"
               alt="icono instagram"
           /></a>
         </article>
       </section>
-      <hr class="linea-footer" />
-      <section class="info-footer">
+      <hr/>
+      <section class="footer__info">
         <p>©TODOS LOS DERECHOS RESERVADOS 1999-2023 Donuts Chile ltda.</p>
         <p>
           Av. Apoquindo 1805, Torre 1, piso 8, Las Condes, Santiago - Chile.
