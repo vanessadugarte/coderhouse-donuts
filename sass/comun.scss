@@ -167,6 +167,12 @@ h4 {
   }
 
 
+  @media only screen and (min-width: 1024px) {
+    .footer{
+      position: relative;
+      bottom: 0;
+    }
+  }
 
   @media only screen and (max-width: 1024px) {
   .organic-shape, .organic-shape2 {
