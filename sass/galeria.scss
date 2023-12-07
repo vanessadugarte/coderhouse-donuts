@@ -1,0 +1,117 @@
+@import 'comun';
+
+/**--------------------GALERIA GRID DESKTOP --------------**/
+
+#container-grid{
+    display:grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: repeat(5,15%);
+    grid-template-areas: 
+    "img-grid-1 img-grid-1 img-grid-1 img-grid-2 img-grid-3" /**fila1**/
+    "img-grid-1 img-grid-1 img-grid-1 img-grid-4 img-grid-3" /**fila2**/
+    "img-grid-5 img-grid-5 img-grid-5 img-grid-4 img-grid-6" /**fila3**/
+    "img-grid-7 img-grid-7 img-grid-7 img-grid-7 img-grid-6" /**fila4**/
+    "img-grid-7 img-grid-7 img-grid-7 img-grid-7 img-grid-8"; /**fila5**/
+    justify-content: center;
+    gap:15px;
+    margin-top:15px;
+}
+
+.tamano-box{
+    position:relative;
+    overflow:clip;
+    
+}
+
+.tamano-box img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.img-grid-1{
+    grid-area: img-grid-1;
+}
+
+.img-grid-2{
+    grid-area: img-grid-2;
+}
+
+.img-grid-3{
+    grid-area: img-grid-3;
+}
+
+.img-grid-4{
+    grid-area: img-grid-4;
+}
+
+.img-grid-5{
+    grid-area: img-grid-5;
+}
+
+.img-grid-6{
+    grid-area: img-grid-6;
+}
+
+.img-grid-7{
+    grid-area: img-grid-7;
+}
+
+.img-grid-8{
+    grid-area: img-grid-8;
+}
+
+
+/**-------galeria media query 768 tablet -------**/
+
+@media only screen and (max-width: 768px) {
+
+#container-grid{
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(4, 275px);
+    grid-template-areas:
+    /**COL1     COL2**/ 
+    "img-grid-1 img-grid-2" /**fila1**/
+    "img-grid-3 img-grid-4" /**fila2**/
+    "img-grid-5 img-grid-6" /**fila3**/
+    "img-grid-7 img-grid-8"; /**fila4**/
+    justify-content: center;
+    gap:15px;
+    margin-top:15px;
+    max-width: 100%;
+}
+
+.tamano-box img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+    }
+/**-------galeria media query mobile 480px -------**/
+
+@media only screen and (max-width: 480px) {
+#container-grid {
+    grid-template-columns: 70%;
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas:
+        "img-grid-1"
+        "img-grid-2"
+        "img-grid-3"
+        "img-grid-4"
+        "img-grid-5"
+        "img-grid-6"
+        "img-grid-7"
+        "img-grid-8";
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tamano-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    }
+

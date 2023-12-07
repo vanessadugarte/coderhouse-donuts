@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Narrow:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Almarai:wght@300;400;700&family=Archivo+Narrow:wght@400;500;600&display=swap");
 
+$colorTitulo:#E70D0D;
+
 body {
   background-color: #FDF3F5;
   margin: 0px;
@@ -25,7 +27,7 @@ body {
 }
 
 .logo-nav {
-  color: #E70D0D;
+  color: $colorTitulo;
   font-style: initial;
   font-family: oswald;
   font-size: 2em;
@@ -61,7 +63,7 @@ body {
 }
 
 .h1 {
-  color: #E70D0D;
+  color: $colorTitulo;
   font-family: oswald;
   font-size: 25px;
   display: flex;
@@ -71,7 +73,7 @@ body {
 
 h2 {
   margin-top: 1%;
-  color: #E70D0D;
+  color: $colorTitulo;
   font-family: oswald;
   font-size: 25px;
   display: flex;
