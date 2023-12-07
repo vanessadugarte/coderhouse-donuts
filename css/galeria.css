@@ -24,7 +24,7 @@ body {
 }
 
 .logo-nav {
-  color: blue;
+  color: #E70D0D;
   font-style: initial;
   font-family: oswald;
   font-size: 2em;
@@ -60,7 +60,7 @@ body {
 }
 
 .h1 {
-  color: blue;
+  color: #E70D0D;
   font-family: oswald;
   font-size: 25px;
   display: flex;
@@ -70,7 +70,7 @@ body {
 
 h2 {
   margin-top: 1%;
-  color: blue;
+  color: #E70D0D;
   font-family: oswald;
   font-size: 25px;
   display: flex;
@@ -108,14 +108,14 @@ h4 {
 /**FOOTER NORMAL**/
 .footer {
   background-color: #FFA1C9;
-  height: 9%;
-  bottom: 0 !important;
+  height: auto;
   margin-top: 2%;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
 }
 .footer hr {
   color: white;
@@ -154,6 +154,11 @@ h4 {
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .organic-shape, .organic-shape2 {
+    display: none;
+  }
+}
 /**MEDIA QUERIES GENERALES TABLET 768px**/
 @media only screen and (max-width: 768px) {
   .introducciones {
@@ -163,10 +168,13 @@ h4 {
   .organic-shape, .organic-shape2 {
     display: none;
   }
-  .footer__info p {
+  .footer {
+    position: static;
+  }
+  .footer .footer__info p {
     font-size: 12px;
   }
-  .footer__rrss article {
+  .footer .footer__rrss article {
     max-width: 22%;
   }
 }
