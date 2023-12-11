@@ -12,7 +12,7 @@
     }
 
     &__button{
-      background-color:#FF68A7;
+      background-color:$primary-color;
       color:#FFF;
       border:none;
       font-family: alata;
@@ -20,6 +20,7 @@
       border-radius: 5px;
       }
 
+    
       &__inputs{
         display:flex;
         flex-direction: column;
@@ -30,7 +31,7 @@
     &--input{
       border:none;
       background-color:#FFE0E6;
-      color:#FF68A7;
+      color:$primary-color;
       font-family: alata;
       margin-top:5px;
       border-radius: 5px;
@@ -45,8 +46,6 @@
   }
   
 }
-
-
 
 
 .mapaContenedor{

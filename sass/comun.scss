@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Almarai:wght@300;400;700&family=Archivo+Narrow:wght@400;500;600&display=swap");
 
 $colorTitulo:#E70D0D;
+$primary-color:#FF68A7;
 
 body {
   background-color: #FDF3F5;
@@ -164,6 +165,17 @@ h4 {
             }
         }
       }
+  }
+
+  .grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+  }
+  .grow:hover{
+    transform: scale3d(1.1, 1.1, 0.1);
+        -webkit-transform: scale3d(1.1, 1.1, 0.1);
+        -moz-transform: scale3d(1.1, 1.1, 0.1);
   }
 
 
