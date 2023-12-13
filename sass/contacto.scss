@@ -1,11 +1,13 @@
 @import 'comun';
 
+iframe{
+height:420px;
+}
+
 .form{
     display:flex;
     justify-content: center;
     gap:60px;
-
-    
 
     &__img{
       max-width:480px;
@@ -20,13 +22,11 @@
       border-radius: 5px;
       }
 
-    
       &__inputs{
         display:flex;
         flex-direction: column;
         max-width: 100%;
         flex-grow: 0.15;
-      
 
     &--input{
       border:none;
@@ -40,13 +40,9 @@
       &::placeholder{
         color:#FF66A6;
     }
-
-  }
-    
-  }
-  
+  } 
+  } 
 }
-
 
 .mapaContenedor{
 display:flex;
@@ -63,11 +59,18 @@ justify-content: center;
       font-family: alata;
       color:#FF68A7;
       font-size:15px;
+      padding-top:1%;
   }
 }
 
 
+
 @media only screen and (max-width: 768px) {
+  iframe{
+    height:350px;
+    width:100%;
+  }
+
   .form{
       flex-direction: column;
       align-items: center;
@@ -96,7 +99,7 @@ justify-content: center;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   main{
     min-height: 78vh;
   }
